@@ -53,8 +53,8 @@ functions:
           authorizer: ${self:custom.authorizer}
   processAuctions:
     handler: src/handlers/processAuctions.handler
-  #  events:
-  #    - schedule: rate(10 minutes)
+    events:
+      - schedule: rate(30 minutes)
 
 custom:
   AuctionsTable:
